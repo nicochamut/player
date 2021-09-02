@@ -1,0 +1,32 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: -5px 5px 12px black;
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border: 2px solid rgb(65, 65, 65);
+    padding: 0.8rem;
+    border-radius: 38px;
+    background: linear-gradient(45deg, #2c2c2c, #252525);
+    box-shadow: 5px -5px 10px #1c1c1c, -5px 5px 10px #363636;
+    transition: all 0.3s ease;
+    color: white;
+
+    &:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}

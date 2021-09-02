@@ -1,0 +1,34 @@
+.song-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    margin-top: 2rem;
+    width: 20%;
+    border-radius: 50%;
+    box-shadow: 8px -8px 16px #101010, -8px 8px 16px #424242;
+    // box-shadow: -9px 9px 18px #101010, 3px -3px 18px #424242;
+  }
+
+  h2 {
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .song-container {
+    img {
+      width: 60%;
+    }
+    h3 {
+      margin-bottom: -1.2rem;
+    }
+  }
+}
